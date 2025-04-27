@@ -114,7 +114,8 @@ int main(void)
   // Storage arrays for each color, and byte count
   uint8_t ledcolors[3 * 16];
   uint16_t ledbytes[(16 * 24) + 150];
-  int G1;
+  int G1[12] = {834, 1668, 2502, 3336, 4170, 5004, 5838, 6672, 7506, 8340,
+  9174, 10008};
   struct can_frame frame;
   uint16_t RPM;
 
@@ -138,6 +139,7 @@ int main(void)
 			//Extract 2 bytes starting at offset 2
 			RPM = ((uint16_t)frame.data[2] << 8) | frame.data[3];
 		}
+		UpdateShiftLights(&htim4, TIM_CHANNEL_1, ledcolors, ledbytes, RPM, G1);
 	}
 
 

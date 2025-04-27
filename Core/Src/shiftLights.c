@@ -86,16 +86,18 @@ void lightOn(TIM_HandleTypeDef *htim, uint32_t Channel, uint8_t *ledcolors,
 		setColor(htim, Channel, 255, 255, 0, ledcolors, ledbytes, index);
 	} else if (index < 10) {
 		setColor(htim, Channel, 128, 255, 0, ledcolors, ledbytes, index);
-	} else {
+	} else if (index < 13){
 		setColor(htim, Channel, 0, 255, 0, ledcolors, ledbytes, index);
+	} else {
+
 	}
 }
 
 void startUp(TIM_HandleTypeDef *htim, uint32_t Channel, uint8_t *ledcolors, uint16_t *ledbytes) {
 	int middle = 7;
 	for (int i = 0; i < 8; i++) {
-		setColor(htim, Channel, 0, 255, 128, ledcolors, ledbytes, middle - i);
-		setColor(htim, Channel, 0, 255, 128, ledcolors, ledbytes, middle + i + 1);
+		setColor(htim, Channel, 0, 255, 0, ledcolors, ledbytes, middle - i);
+		setColor(htim, Channel, 0, 255, 0, ledcolors, ledbytes, middle + i + 1);
 		HAL_Delay(25);
 	}
 	for (int i = 0; i < 8; i++) {
