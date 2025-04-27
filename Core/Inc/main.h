@@ -32,6 +32,7 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "shiftLights.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -49,8 +50,6 @@ extern "C" {
 
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -60,6 +59,18 @@ void Error_Handler(void);
 
 /* Private defines -----------------------------------------------------------*/
 #define LED_CNT 125
+#define BT4_Pin GPIO_PIN_13
+#define BT4_GPIO_Port GPIOB
+#define BT4_EXTI_IRQn EXTI15_10_IRQn
+#define BT3_Pin GPIO_PIN_8
+#define BT3_GPIO_Port GPIOA
+#define BT3_EXTI_IRQn EXTI9_5_IRQn
+#define BT2_Pin GPIO_PIN_9
+#define BT2_GPIO_Port GPIOA
+#define BT2_EXTI_IRQn EXTI9_5_IRQn
+#define BT1_Pin GPIO_PIN_10
+#define BT1_GPIO_Port GPIOA
+#define BT1_EXTI_IRQn EXTI15_10_IRQn
 
 /* USER CODE BEGIN Private defines */
 

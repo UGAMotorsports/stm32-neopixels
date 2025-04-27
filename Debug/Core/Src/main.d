@@ -30,7 +30,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/cathy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
  C:/Users/cathy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  C:/Users/cathy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
- ../Core/Inc/shiftLights.h ../Core/Inc/main.h
+ ../Core/Inc/shiftLights.h ../Core/Inc/main.h ../Core/Inc/dma.h \
+ ../Core/Inc/spi.h ../Core/Inc/tim.h ../Core/Inc/usb_otg.h \
+ ../Core/Inc/gpio.h ../Core/Inc/mcp2515user.h \
+ ../Core/Inc/stm32-hal-mcp2515/CAN.h
 ../Core/Inc/main.h:
 C:/Users/cathy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -65,3 +68,10 @@ C:/Users/cathy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/STM32F4xx_HA
 C:/Users/cathy/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
 ../Core/Inc/shiftLights.h:
 ../Core/Inc/main.h:
+../Core/Inc/dma.h:
+../Core/Inc/spi.h:
+../Core/Inc/tim.h:
+../Core/Inc/usb_otg.h:
+../Core/Inc/gpio.h:
+../Core/Inc/mcp2515user.h:
+../Core/Inc/stm32-hal-mcp2515/CAN.h:

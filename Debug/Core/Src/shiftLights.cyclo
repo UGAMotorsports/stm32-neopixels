@@ -1,3 +1,6 @@
-../Core/Src/shiftLights.c:15:6:setColor	6
-../Core/Src/shiftLights.c:40:6:shiftLightsInit	7
-../Core/Src/shiftLights.c:63:6:HAL_TIM_PWM_PulseFinishedCallback	1
+../Core/Src/shiftLights.c:14:6:setColor	6
+../Core/Src/shiftLights.c:39:6:shiftLightsInit	7
+../Core/Src/shiftLights.c:64:6:HAL_TIM_PWM_PulseFinishedCallback	1
+../Core/Src/shiftLights.c:70:6:UpdateShiftLights	3
+../Core/Src/shiftLights.c:83:6:lightOn	3
+../Core/Src/shiftLights.c:94:6:startUp	3
