@@ -123,6 +123,9 @@ int main(void)
   shiftLightsInit(&htim4, TIM_CHANNEL_1, ledcolors, ledbytes);
   HAL_Delay(1000);
   startUp(&htim4, TIM_CHANNEL_1, ledcolors, ledbytes);
+  for (int i = 0; i < 11000; i += 834) {
+  	UpdateShiftLights(&htim4, TIM_CHANNEL_1, ledcolors, ledbytes, i, G1);
+  }
   //setColor(&htim4, TIM_CHANNEL_1, 0, 255, 0, ledcolors, ledbytes, 2);
   /* USER CODE END 2 */
 
@@ -134,6 +137,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+	/*
 	if (readMessage(&frame)) {
 		if (frame.can_id == 1520) { // 1520 decimal
 			//Extract 2 bytes starting at offset 2
@@ -141,7 +145,8 @@ int main(void)
 		}
 		UpdateShiftLights(&htim4, TIM_CHANNEL_1, ledcolors, ledbytes, RPM, G1);
 	}
-
+	*/
+	  UpdateShiftLights(&htim4, TIM_CHANNEL_1, ledcolors, ledbytes, 10500, G1);
 
 	  //HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED ON
 	  //HAL_Delay(500);  // 500ms delay
